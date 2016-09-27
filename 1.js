@@ -67,5 +67,19 @@
              	}
              }
              video.poster="3.jpg";
-            
+             
+           /*function run(){
+            	var bar =document.getElementById("bar");
+            	var total = document.getElementById("total");
+            	bar.style.width=parseInt(bar.style.width)+1+"%";
+            	total.innerHTML=bar.style.width;
+            	if(bar.style.width=="100%"){
+            		window.clearTimeout(timeout);
+            		return;
+            	}
+            	var timeout=window.setTimeout("run()",100);
+            }
+            window.onload=function(){
+            	run();
+            }*/
 }(window))
