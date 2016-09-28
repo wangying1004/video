@@ -70,7 +70,7 @@
             img6.style.display = "none";
         }
     }
-    video.poster = "3.jpg";
+    video.poster = "img/3.jpg";
 
 
 
