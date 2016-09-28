@@ -72,6 +72,14 @@
     }
     video.poster = "img/3.jpg";
 
+    var quan = document.getElementById('quan');
+    quan.onmouseover=function(){
+      document.getElementById('zong').style.display="block";
+    }
+    quan.onmouseout = function(){
+        document.getElementById('zong').style.display="none";
+    }
+
 
 
 }(window))
