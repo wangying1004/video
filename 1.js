@@ -112,6 +112,12 @@
     
     jindutiaowai.onmousedown = function(event) {
             var length = event.clientX - jindutiao.offsetLeft;
+            var percent = (length) / jindutiaowai.offsetWidth;//可视宽度
+            jindutiao.style.width = percent * 390+ "px";
+            video.currentTime = percent * video.duration;//当前时间/视频持续时间
+        }
+        jindutiao.onmousedown = function(event) {
+            var length = event.clientX - jindutiao.offsetLeft;
             var percent = (length) / jindutiaowai.offsetWidth;
             jindutiao.style.width = percent * 390+ "px";
             video.currentTime = percent * video.duration;
