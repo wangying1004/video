@@ -128,6 +128,8 @@
     var jiahao = document.getElementById('jiahao');
     var yltiao = document.getElementById('yltiao');
     var ylleft = document.getElementById('ylleft');
+    var ylwai = document.getElementById('ylwai');
+
     jianhao.onclick = function() {
         video.volume -= 0.1;
     }
@@ -138,6 +140,20 @@
         yltiao.style.width = video.volume * 100 + "px";
         ylleft.style.left = video.volume * 100 + 680 + "px";
     }
+    ylleft.ondragend = function(event) {
+        var length = event.clientX - ylwai.offsetLeft;
+        var percent = (length) / ylwai.offsetWidth;
+        yltiao.style.width = percent * 113 + "px";
+        ylleft.style.left = percent * 113 +682 + "px";
+        
+    }
+    ylleft.ondrag = function(event) {
+            var length = event.clientX - ylwai.offsetLeft;
+            var percent = (length) / ylwai.offsetWidth;
+            yltiao.style.width = percent * 113 + "px";
+            ylleft.style.left = percent * 113+682 + "px";
+           
+        }
 
     var add = document.getElementById('add');
         var xzwj = document.getElementById('xzwj');
