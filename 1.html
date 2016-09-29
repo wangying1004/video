@@ -27,7 +27,7 @@
     
     #img5 {
         position: absolute;
-        top: 500px;
+        top: 499px;
         left: 600px;
     }
     
@@ -52,14 +52,14 @@
     
     #div2 {
         position: absolute;
-        top: 500px;
-        left: 640px;
+        top: 509px;
+        left: 668px;
     }
     
     #jindutiao {
         position: absolute;
-        left: 1px;
-        top: 9px;
+        left: 180px;
+        top: 512px;
         width: 390px;
         height: 10px;
         border: 1px solid gray;
@@ -68,8 +68,8 @@
     
     #jindutiaowai {
         position: absolute;
-        left: 1px;
-        top: 9px;
+        left: 180px;
+        top: 512px;
         width: 390px;
         height: 10px;
         border: 1px solid gray;
@@ -78,8 +78,8 @@
     
     #jindutiaoleft {
         position: absolute;
-        left: 1px;
-        top: 7px;
+        left: 180px;
+        top: 510px;
         background-color: blue;
         border-radius: 20px;
         width: 15px;
@@ -91,6 +91,70 @@
         position: absolute;
         top: -10px;
         left: -18px;
+    }
+    
+    #quan {
+        position: absolute;
+        width: 850px;
+        height: 520px;
+    }
+    
+    #jiahao {
+        position: absolute;
+        top: 499px;
+        left: 822px;
+        width: 20px;
+        height: 30px;
+    }
+    
+    #jianhao {
+        position: absolute;
+        top: 499px;
+        left: 644px;
+        width: 20px;
+        height: 30px;
+    }
+    
+    #ylwai {
+        position: absolute;
+        left: 682px;
+        top: 509px;
+        width: 113px;
+        height: 10px;
+        border: 1px solid gray;
+        background-color: white;
+    }
+    
+    #yltiao {
+        position: absolute;
+        left: 682px;
+        top: 509px;
+        width: 113px;
+        height: 10px;
+        border: 1px solid gray;
+        background-color: black;
+    }
+    
+    #ylleft {
+        background-color: lightgray;
+        border-radius: 20px;
+        width: 14px;
+        height: 10px;
+        border: gray 1px solid;
+        position: absolute;
+        left: 682px;
+        top: 509px;
+    }
+    #xzwj{
+        position: absolute;
+        left: 50px;
+        top: 550px;
+    }
+
+    #add{
+        position: absolute;
+        left: 450px;
+        top: 550px;
     }
     </style>
     <script type="text/javascript" defer src="1.js"></script>
@@ -106,15 +170,20 @@
             <img src="img/1.png" style="width:40px;height:40px;" id="img1">
             <img src="img/2.png" style="width:40px;height:40px;" id="img3">
             <div id="div1">0:00/0:00</div>
-            <div id="div" style="width:400px;height:30px;background-color:#f1f1f1">
-                <div id="jindutiaowai"></div>
-                <div id="jindutiao"></div>
-                <div id="jindutiaoleft"></div>
-            </div>
+            <div id="jindutiaowai"></div>
+            <div id="jindutiao"></div>
+            <div id="jindutiaoleft" draggable="true"></div>
             <img src="img/5.png" style="width:40px;height:40px;" id="img5">
             <img src="img/6.png" style="width:40px;height:40px;" id="img6">
-            <div id="div2" style="width:200px;height:30px;background-color:#f1f1f1"></div>
+            <div id="div2" style="width:160px;height:10px;background-color:#f1f1f1"></div>
+            <img src="img/jiahao.png" id="jiahao">
+            <img src="img/jianhao.png" id="jianhao">
+            <div id="ylwai"></div>
+            <div id="yltiao"></div>
+            <div id="ylleft"></div>
         </div>
+        <input type="file" name="aa" id="xzwj">
+        <button id="add">add</button>
     </div>
 </body>
 
